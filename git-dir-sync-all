@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Define the directory to iterate through (current directory by default)
+base_dir="."
+
+# Loop through each folder in the directory
+for folder in "$base_dir"/*/; do
+
+	echo "Entering directory: $folder"
+
+	# Move to the folder
+	cd "$folder" || exit
+
+	git sync-all
+
+	# Return back to the base directory
+	cd .. || exit
+        
+done
