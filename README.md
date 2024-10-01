@@ -2,7 +2,8 @@
 My collection of useful custom git commands.
 ## Setup
 1. Pull the repo.
-2. Add pulled repo dirpath to the $PATH.
+2. Make sure the commands files are executable.
+3. Add pulled repo dirpath to the $PATH.
 ## Overview
 ### git-sync-all
 Syncs up all local branches of a Git repo to track the remote counterparts and pull the latest changes. 
